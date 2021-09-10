@@ -8,7 +8,7 @@ const ImageList = ({ images }) => {
         <div className="image-list">
             {/* {images.map((props.image) => ( */}
             {images.map((image) => (
-                <ImageCard image={image} />
+                <ImageCard key={image.urls.regular} image={image} />
             ))}
         </div>
     );
